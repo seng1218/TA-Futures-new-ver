@@ -3,26 +3,17 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Entrance from "@/components/Entrance";
 import { sceneState } from "@/utils/store";
-import { useRef, useState, useCallback } from "react";
-import { AnimatePresence } from "framer-motion";
+import { useRef } from "react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
 export default function HomeClient({ children }: { children: React.ReactNode }) {
-  const [isLoaded, setIsLoaded] = useState(false);
   const container = useRef<HTMLDivElement>(null);
 
-  const handleEntranceComplete = useCallback(() => {
-    setIsLoaded(true);
-  }, []);
-
   useGSAP(() => {
-    if (!isLoaded) return;
-
     // Entrance Animation for Hero
     const tl = gsap.timeline();
     
@@ -82,18 +73,11 @@ export default function HomeClient({ children }: { children: React.ReactNode }) 
       scale: 2,
     });
 
-  }, { scope: container, dependencies: [isLoaded] });
+  }, { scope: container });
 
   return (
     <div ref={container} className="relative min-h-screen">
-      <AnimatePresence>
-        {!isLoaded && (
-          <Entrance key="entrance-loader" onComplete={handleEntranceComplete} />
-        )}
-      </AnimatePresence>
-      <div className={isLoaded ? 'opacity-100' : 'opacity-0'}>
-        {children}
-      </div>
+      {children}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import PageTransition from "@/components/PageTransition";
+import GlobalLoader from "@/components/GlobalLoader";
 
 export const metadata: Metadata = {
  title: "TA Futures | Next-Generation Trading Infrastructure",
@@ -32,6 +33,7 @@ export default function RootLayout({
  <html lang="en" suppressHydrationWarning>
  <body className="antialiased selection:bg-brand selection:text-white flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
  <ThemeProvider>
+ <GlobalLoader>
  <Header />
 
  <PageTransition>
@@ -40,6 +42,7 @@ export default function RootLayout({
  </main>
  <Footer />
  </PageTransition>
+ </GlobalLoader>
  </ThemeProvider>
  </body>
  </html>
