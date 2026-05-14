@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, Clock } from 'lucide-react';
+import type { Metadata } from 'next';
 
 interface ContentSection {
   section: string;
@@ -83,6 +84,16 @@ const moduleData: Record<string, ModuleData> = {
   }
 };
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const data = moduleData[slug];
+  
+  return {
+    title: `${data?.title || 'Academy Module'} | TA Futures Academy`,
+    description: data?.description || "Master the derivatives markets with our comprehensive educational resources.",
+  };
+}
+
 export default async function ModulePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const data = moduleData[slug];
@@ -133,9 +144,9 @@ export default async function ModulePage({ params }: { params: Promise<{ slug: s
           <BookOpen className="h-12 w-12 mx-auto mb-4 opacity-50" />
           <h3 className="text-2xl font-bold mb-2">Ready for the next step?</h3>
           <p className="mb-6 opacity-90">Open a trading account today and apply what you&apos;ve learned in the real markets.</p>
-          <button className="bg-white text-brand px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform">
+          <Link href="/#open-account" className="inline-block bg-white text-brand px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform">
             Open Account
-          </button>
+          </Link>
         </div>
       </div>
     </main>

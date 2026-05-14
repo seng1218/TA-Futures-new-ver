@@ -35,6 +35,12 @@ export async function submitLead(formData: FormData) {
 
  try {
  const { fullName, email, phone, interest } = validatedData.data;
+ 
+ if (!process.env.RESEND_API_KEY) {
+   console.error("Missing RESEND_API_KEY environment variable");
+   return { success: false, error: "Email service is not configured. Please contact support." };
+ }
+
  const resend = new Resend(process.env.RESEND_API_KEY);
 
  const { error } = await resend.emails.send({
