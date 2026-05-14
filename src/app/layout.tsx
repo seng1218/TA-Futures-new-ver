@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
  title: "TA Futures | Next-Generation Trading Infrastructure",
@@ -33,11 +34,12 @@ export default function RootLayout({
  <ThemeProvider>
  <Header />
 
- <div className="flex-grow">
+ <PageTransition>
+ <main className="flex-grow">
  {children}
- </div>
-
+ </main>
  <Footer />
+ </PageTransition>
  </ThemeProvider>
  </body>
  </html>
