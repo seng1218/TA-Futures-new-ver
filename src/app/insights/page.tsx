@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import MarketIntelligence from '@/components/MarketIntelligence';
 
 export const metadata: Metadata = {
@@ -22,7 +23,18 @@ export default function InsightsPage() {
 
       {/* Reuse our powerful component without its top margin for cleaner integration */}
       <div className="-mt-16">
-        <MarketIntelligence />
+        <Suspense fallback={
+          <div className="max-w-7xl mx-auto px-6 py-16 animate-pulse">
+            <div className="h-8 bg-slate-200 dark:bg-slate-800 rounded-lg w-64 mb-4" />
+            <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-96 mb-10" />
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+              <div className="lg:col-span-3 aspect-video bg-slate-200 dark:bg-slate-800 rounded-2xl" />
+              <div className="lg:col-span-2 bg-slate-200 dark:bg-slate-800 rounded-2xl h-64" />
+            </div>
+          </div>
+        }>
+          <MarketIntelligence />
+        </Suspense>
       </div>
     </main>
   );

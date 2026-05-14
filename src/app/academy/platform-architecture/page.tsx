@@ -1,16 +1,8 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-
-const sectionVariants: Variants = {
-  hidden: { opacity: 0, y: 40, rotateX: 12 },
-  visible: (i: number) => ({
-    opacity: 1, y: 0, rotateX: 0,
-    transition: { duration: 0.7, delay: i * 0.08, ease: 'easeOut' as const },
-  }),
-};
 
 export default function PlatformArchitecturePage() {
   return (

@@ -38,8 +38,8 @@ export async function submitLead(formData: FormData) {
  const resend = new Resend(process.env.RESEND_API_KEY);
 
  const { error } = await resend.emails.send({
- from: 'Acme <onboarding@resend.dev>',
- to: 'senghoos121887@gmail.com',
+ from: `TA Futures <${process.env.RESEND_SENDER_EMAIL ?? 'onboarding@resend.dev'}>`,
+ to: process.env.LEAD_RECIPIENT_EMAIL ?? 'tafdealing@ta.com.my',
  subject: `New Lead: ${escapeHtml(fullName)} (${interest})`,
  html: `
  <h2>New Account Opening Request</h2>

@@ -32,3 +32,26 @@ timestamp,tool,file_path,action,details
 2026-05-14 09:47:12,Write,D:\taf new website ver 2\src\app\layout.tsx,created,
 2026-05-14 10:32:32,Edit,D:\taf new website ver 2\src\app\about-us\page.tsx,modified,
 2026-05-14 10:33:11,Edit,D:\taf new website ver 2\src\app\about-us\page.tsx,modified,
+2026-05-14 11:36:22,Bash,-,executed,"netstat -ano | grep "":3000\|:443\|:80"" 2>/dev/null || ss -tlnp 2>/dev/null | grep ""3000\|443"" || echo ""checking ports..."""
+2026-05-14 11:36:29,Bash,-,executed,"netstat -ano | findstr ""LISTENING"" | findstr "":443 \|:80 \|:3000 "" 2>/dev/null || echo ""none found"""
+2026-05-14 11:36:31,Bash,-,executed,"sc query W3SVC 2>/dev/null || echo ""IIS not found"""
+2026-05-14 11:54:34,Edit,D:\taf new website ver 2\src\components\MarketIntelligence.tsx,modified,
+2026-05-14 11:54:37,Edit,D:\taf new website ver 2\src\components\Header.tsx,modified,
+2026-05-14 11:54:41,Edit,D:\taf new website ver 2\src\app\layout.tsx,modified,
+2026-05-14 11:54:45,Edit,D:\taf new website ver 2\src\components\ThreeScene\Scene.tsx,modified,
+2026-05-14 11:54:50,Edit,D:\taf new website ver 2\src\components\Entrance.tsx,modified,
+2026-05-14 11:54:54,Edit,D:\taf new website ver 2\src\app\actions\submitLead.ts,modified,
+2026-05-14 11:54:59,Edit,D:\taf new website ver 2\src\components\LeadForm.tsx,modified,
+2026-05-14 11:55:03,Edit,D:\taf new website ver 2\src\components\LeadForm.tsx,modified,
+2026-05-14 11:55:07,Edit,D:\taf new website ver 2\src\components\LeadForm.tsx,modified,
+2026-05-14 11:55:14,Edit,D:\taf new website ver 2\src\app\insights\page.tsx,modified,
+2026-05-14 11:55:19,Edit,D:\taf new website ver 2\src\app\insights\page.tsx,modified,
+2026-05-14 11:55:24,Write,D:\taf new website ver 2\web.config,created,
+2026-05-14 11:55:30,Write,D:\taf new website ver 2\.env.local,created,
+2026-05-14 11:56:19,Bash,-,executed,"cd ""D:/taf new website ver 2"" && npx tsc --noEmit 2>&1 | head -60"
+2026-05-14 11:56:30,Bash,-,executed,"cd ""D:/taf new website ver 2"" && npx eslint src/ --ext .ts,.tsx 2>&1 | head -60"
+2026-05-14 11:56:44,Edit,D:\taf new website ver 2\src\app\academy\fcpo-mastery\page.tsx,modified,
+2026-05-14 11:56:47,Edit,D:\taf new website ver 2\src\app\academy\futures-101\page.tsx,modified,
+2026-05-14 11:56:51,Edit,D:\taf new website ver 2\src\app\academy\technical-analysis\page.tsx,modified,
+2026-05-14 11:56:54,Edit,D:\taf new website ver 2\src\app\academy\platform-architecture\page.tsx,modified,
+2026-05-14 11:57:03,Bash,-,executed,"cd ""D:/taf new website ver 2"" && npx tsc --noEmit 2>&1 && echo ""TSC_CLEAN"" && npx eslint src/ --ext .ts,.tsx 2>&1 && echo ""LINT_CLEAN"""

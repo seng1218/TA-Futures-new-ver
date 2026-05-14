@@ -28,8 +28,8 @@ export default function Header() {
         <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center" onClick={() => setIsMenuOpen(false)}>
-              <Image src="/logo.png" alt="TA Futures Logo" width={180} height={45} className="h-12 w-auto object-contain dark:hidden" priority />
-              <Image src="/logo-dark.png" alt="TA Futures Logo Dark" width={180} height={45} className="h-12 w-auto object-contain hidden dark:block" priority />
+              <Image src="/logo.png?v=2" alt="TA Futures Logo" width={180} height={45} className="h-12 w-auto object-contain dark:hidden" priority />
+              <Image src="/logo-dark.png?v=2" alt="TA Futures Logo Dark" width={180} height={45} className="h-12 w-auto object-contain hidden dark:block" priority />
             </Link>
           </div>
 
@@ -97,7 +97,7 @@ export default function Header() {
                   <a href="mailto:tafdealing@ta.com.my" className="text-xl font-bold hover:text-brand">tafdealing@ta.com.my</a>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <a href="https://estatement.taonline.com.my/" target="_blank" className="bg-brand text-white py-4 rounded-xl text-center font-bold shadow-lg shadow-brand/20">
+                  <a href="https://estatement.taonline.com.my/" target="_blank" rel="noopener noreferrer" className="bg-brand text-white py-4 rounded-xl text-center font-bold shadow-lg shadow-brand/20">
                     Statement Log In
                   </a>
                 </div>

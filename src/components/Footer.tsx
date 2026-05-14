@@ -11,22 +11,21 @@ export default function Footer() {
  <div className="lg:col-span-1">
  <Link href="/" className="flex items-center mb-5">
  <Image
- src="/logo.png"
- alt="TA Futures Logo"
- width={180}
- height={45}
- className="h-10 w-auto object-contain dark:hidden"
- quality={100}
+   src="/logo.png?v=2"
+   alt="TA Futures Logo"
+   width={180}
+   height={45}
+   className="h-10 w-auto object-contain dark:hidden"
+   quality={100}
  />
  <Image
- src="/logo-dark.png"
- alt="TA Futures Logo Dark"
- width={180}
- height={45}
- className="h-10 w-auto object-contain hidden dark:block"
- quality={100}
- />
- </Link>
+   src="/logo-dark.png?v=2"
+   alt="TA Futures Logo Dark"
+   width={180}
+   height={45}
+   className="h-10 w-auto object-contain hidden dark:block"
+   quality={100}
+ /> </Link>
  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
  Next-generation trading infrastructure providing direct market access to Bursa Malaysia Derivatives (BMD) futures.
  </p>

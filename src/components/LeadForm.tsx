@@ -6,16 +6,18 @@ import { CheckCircle2, FileText, PhoneCall } from 'lucide-react';
 
 export default function LeadForm() {
  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+ const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
  async function clientAction(formData: FormData) {
  setStatus('loading');
+ setErrorMsg(null);
  const result = await submitLead(formData);
 
  if (result.success) {
  setStatus('success');
  } else {
  setStatus('idle');
- alert(result?.error || "Something went wrong.");
+ setErrorMsg(result?.error || "Something went wrong. Please try again.");
  }
  }
 
@@ -70,7 +72,7 @@ export default function LeadForm() {
  className="w-full bg-gray-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500" />
  </div>
 
- <select name="interest" className="w-full bg-gray-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all appearance-none cursor-pointer">
+ <select name="interest" required className="w-full bg-gray-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-slate-900 dark:text-white focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all appearance-none cursor-pointer">
  <option value="FCPO">Primary Interest: FCPO (Crude Palm Oil)</option>
  <option value="FEPO">Primary Interest: FEPO (East Malaysia CPO)</option>
  <option value="FPKO">Primary Interest: FPKO (Palm Kernel Oil)</option>
@@ -81,6 +83,12 @@ export default function LeadForm() {
  <option value="Options">Primary Interest: Options (OCPO / OKLI)</option>
  <option value="General">General Inquiry</option>
  </select>
+
+ {errorMsg && (
+ <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-sm text-red-700 dark:text-red-400 font-medium">
+ {errorMsg}
+ </div>
+ )}
 
  <button type="submit" disabled={status === 'loading'}
  className="w-full bg-brand hover:bg-brand-light disabled:bg-slate-300 dark:disabled:bg-slate-800 disabled:text-slate-500 dark:disabled:text-slate-600 text-white py-4 rounded-xl font-bold text-lg transition-all mt-4 shadow-lg shadow-brand/20">

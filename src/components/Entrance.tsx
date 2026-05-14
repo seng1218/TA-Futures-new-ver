@@ -7,18 +7,22 @@ export default function Entrance({ onComplete }: { onComplete: () => void }) {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
+    let completionTimeout: ReturnType<typeof setTimeout>;
     const timer = setInterval(() => {
       setCounter((prev) => {
         if (prev >= 100) {
           clearInterval(timer);
-          setTimeout(onComplete, 500);
+          completionTimeout = setTimeout(onComplete, 500);
           return 100;
         }
         return prev + 1;
       });
     }, 20);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+      clearTimeout(completionTimeout);
+    };
   }, [onComplete]);
 
   return (

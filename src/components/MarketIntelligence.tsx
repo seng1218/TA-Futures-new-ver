@@ -27,7 +27,7 @@ async function getLatestNews(): Promise<NewsArticle[]> {
     }));
 
   } catch (error) {
-    console.log("Live API fetch failed. Using fallback data.", error);
+    console.error("Live API fetch failed. Using fallback data.", error);
     return [
       { id: 1, title: "Automated Feed: FCPO Support Levels Tested", date: "Just Now", category: "Live Market", url: "#" },
       { id: 2, title: "Automated Feed: CME Micro E-mini Volume Surge", date: "10 mins ago", category: "Equities", url: "#" },
