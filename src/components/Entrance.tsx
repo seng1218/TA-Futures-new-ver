@@ -36,7 +36,7 @@ export default function Entrance({ onComplete }: { onComplete: () => void }) {
           initial={{ y: "100%" }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-8xl font-black tracking-tighter text-slate-900 dark:text-white"
+          className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 dark:text-white"
         >
           {counter}%
         </motion.div>

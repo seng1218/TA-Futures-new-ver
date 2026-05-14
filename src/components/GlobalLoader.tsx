@@ -7,10 +7,16 @@ import Entrance from './Entrance';
 
 export default function GlobalLoader({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [isLoaded, setIsLoaded] = useState(true);
+  // Initialize state based on sessionStorage if available (client-side only)
+  const [isLoaded, setIsLoaded] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const hasSeen = sessionStorage.getItem('hasSeenEntrance') === 'true';
+      return pathname !== '/' || hasSeen;
+    }
+    return true;
+  });
 
   useEffect(() => {
-    // Only play entrance on the root home page if not seen before
     const hasSeenEntrance = sessionStorage.getItem('hasSeenEntrance') === 'true';
     if (pathname === '/' && !hasSeenEntrance) {
       setIsLoaded(false);
