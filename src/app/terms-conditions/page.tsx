@@ -7,7 +7,7 @@ const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 35, rotateX: 12 },
   visible: (i: number) => ({
     opacity: 1, y: 0, rotateX: 0,
-    transition: { duration: 0.7, delay: i * 0.1, ease: 'easeOut' }
+    transition: { duration: 0.7, delay: i * 0.1, ease: 'easeOut' as const }
   }),
 };
 

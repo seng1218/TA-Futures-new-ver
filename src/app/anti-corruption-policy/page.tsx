@@ -1,15 +1,15 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { Download, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 
-const sectionVariants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30, rotateX: 10 },
   visible: (i: number) => ({
     opacity: 1, y: 0, rotateX: 0,
-    transition: { duration: 0.65, delay: i * 0.1, ease: 'easeOut' },
+    transition: { duration: 0.65, delay: i * 0.1, ease: 'easeOut' as const },
   }),
 };
 
