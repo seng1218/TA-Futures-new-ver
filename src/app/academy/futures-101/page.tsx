@@ -26,7 +26,7 @@ export default function Futures101Page() {
           Futures 101: The Core Fundamentals
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed transition-colors">
-          Welcome to the derivatives market. Before executing your first trade, it is paramount that you understand the fundamental mechanics driving these highly liquid, leveraged instruments.
+          Welcome! Before you start trading, it is important to understand how futures work. This module covers everything you need to know as a beginner.
         </p>
       </motion.section>
 
@@ -37,10 +37,10 @@ export default function Futures101Page() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">1. What is a Futures Contract?</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            A futures contract is a legally binding agreement to buy or sell a specific underlying asset (such as Crude Palm Oil, Gold, or a Stock Index) at a predetermined price on a specified date in the future.
+            A futures contract is an agreement to buy or sell something (like palm oil, gold, or a stock index) at a fixed price on a set date in the future.
           </p>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Unlike trading physical stocks, you don&apos;t instantly &quot;own&quot; the asset when you buy a futures contract. Instead, you are placing an obligation to own it later. However, the vast majority of traders never take physical delivery—they offset (close) their positions before the expiration date to simply capture the difference in price.
+            Unlike buying stocks, you do not own the item right away. You are agreeing to buy it on a future date. But most traders close their position before that date — they just want to profit from the price change, not take delivery of the actual goods.
           </p>
 
           {/* Contract Flow Diagram */}
@@ -81,17 +81,17 @@ export default function Futures101Page() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">2. The Power of Leverage & Margin</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Leverage is what makes futures trading so capital efficient. You do not need the full notional value of the contract to trade it. Instead, you deposit a fraction of the total value to prove you can cover potential losses. This deposit is known as <strong>Margin</strong>.
+            Leverage is what makes futures trading efficient. Instead of paying the full contract value, you only put down a small amount called <strong>Margin</strong>. This small deposit lets you control a much larger position.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 mt-4">
             <div className="border border-slate-200 dark:border-slate-700 rounded-xl p-6 bg-slate-50 dark:bg-slate-800/50 transition-colors">
               <h4 className="font-bold text-slate-900 dark:text-white mb-2 transition-colors">Initial Margin</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The exact minimum amount of capital required in your account to open a new position. Currently, to trade 1 lot of FCPO, the initial margin is roughly RM 9,000.</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The minimum amount of money needed in your account to open a trade. For example, to trade 1 lot of FCPO, you need about RM 9,000.</p>
             </div>
             <div className="border border-slate-200 dark:border-slate-700 rounded-xl p-6 bg-slate-50 dark:bg-slate-800/50 transition-colors">
               <h4 className="font-bold text-slate-900 dark:text-white mb-2 transition-colors">Maintenance Margin</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The absolute minimum balance required to keep the position open dynamically during adverse price movement. If your balance dips below this, you face a <strong>Margin Call</strong>.</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The minimum balance needed to keep your trade open. If your account balance drops below this, you will get a <strong>Margin Call</strong> — a request to top up your account.</p>
             </div>
           </div>
 
@@ -124,7 +124,7 @@ export default function Futures101Page() {
           </div>
 
           <p className="text-slate-600 dark:text-red-300 leading-relaxed bg-red-50 dark:bg-red-900/30 text-red-800 dark:text-red-200 p-5 rounded-xl border border-red-100 dark:border-red-800/50 transition-colors">
-            <strong>Warning:</strong> Leverage is a double-edged sword. While it exponentially magnifies your gains, it identically magnifies your losses. An improperly hedged position can result in losses exceeding your initial deposit.
+            <strong>Warning:</strong> Leverage works both ways. It can increase your profits, but it also increases your losses. You can lose more than your initial deposit if you are not careful.
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export default function Futures101Page() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">3. Going Long vs. Going Short</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            In traditional equity markets, you typically buy a stock and hope it goes up (Going Long). If the market collapses, you simply lose money. In the futures market, you can just as easily profit from a falling market by <strong>Going Short</strong>.
+            In the stock market, you usually buy shares and wait for prices to go up. In futures trading, you can also profit when prices fall. This is called <strong>Going Short</strong>.
           </p>
 
           {/* Long vs Short Scenario Cards */}
@@ -200,10 +200,10 @@ export default function Futures101Page() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">4. Mark-to-Market Settlement</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Futures contracts employ a system called &quot;Mark-to-Market&quot;, which settles your account dynamically at the end of every trading session.
+            Futures use a system called &quot;Mark-to-Market&quot;, which updates your account balance at the end of every trading day based on your profit or loss.
           </p>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 transition-colors">
-            Unlike stocks where your profit/loss exists &quot;on paper&quot; until you sell, a futures exchange continuously credits or debits your cash balance based on the day&apos;s settlement price. If your position is wildly profitable, the cash is actually swept into your account overnight. If you are experiencing heavy losses, cash is drained from your account overnight.
+            Unlike stocks where gains or losses only appear when you sell, futures update your account every day. If you made a profit today, the money is added to your account overnight. If you made a loss, it is taken out.
           </p>
 
           {/* MTM Daily Settlement Timeline */}
@@ -232,7 +232,7 @@ export default function Futures101Page() {
 
           <div className="bg-slate-900 text-white rounded-2xl p-8 text-center mt-8">
             <h3 className="text-2xl font-bold mb-3">Ready to Apply These Concepts?</h3>
-            <p className="text-slate-400 mb-6 max-w-lg mx-auto">Now that you understand the mechanics, test your risk management on our live execution platforms.</p>
+            <p className="text-slate-400 mb-6 max-w-lg mx-auto">Now that you know the basics, try our trading platforms and put your knowledge to work.</p>
             <Link href="/platforms" className="inline-block bg-brand hover:bg-brand-light text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg shadow-brand/20">
               Download Pro Terminal
             </Link>

@@ -21,19 +21,19 @@ const moduleData: Record<string, ModuleData> = {
     title: "Futures 101",
     level: "Beginner",
     duration: "45 mins",
-    description: "Understanding critical margin requirements, leverage dynamics, and the foundational mechanics of derivative contracts.",
+    description: "Learn the basics of futures contracts, including margin, leverage, and how trading works.",
     content: [
       {
         section: "What are Futures?",
-        text: "A futures contract is a legal agreement to buy or sell a particular commodity asset, or security at a predetermined price at a specified time in the future. Futures contracts are standardized to facilitate trading on a futures exchange."
+        text: "A futures contract is an agreement to buy or sell something at a set price on a future date. All futures contracts on the exchange have the same standard terms."
       },
       {
         section: "Margin & Leverage",
-        text: "Futures trading requires only a fraction of the total contract value, known as 'Initial Margin'. This leverage allows for significant exposure with relatively small capital, but also increases risk."
+        text: "To trade futures, you only need to put up a small deposit called the 'Initial Margin'. This lets you control a large contract with less money, but it also means your losses can be larger."
       },
       {
         section: "Mark-to-Market",
-        text: "At the end of each trading day, the exchange settles all accounts by adjusting them for profits or losses based on the day's closing price. This is known as the mark-to-market process."
+        text: "At the end of each trading day, your account is updated to reflect your profit or loss based on the closing price. This is called mark-to-market."
       }
     ]
   },
@@ -41,7 +41,7 @@ const moduleData: Record<string, ModuleData> = {
     title: "FCPO Mastery",
     level: "Intermediate",
     duration: "60 mins",
-    description: "Our exclusive deep dive into the supply, demand, and macroeconomic fundamentals driving Crude Palm Oil.",
+    description: "A detailed look at what drives palm oil prices — including supply, demand, and global economic factors.",
     content: [
       {
         section: "Introduction to FCPO",
@@ -49,7 +49,7 @@ const moduleData: Record<string, ModuleData> = {
       },
       {
         section: "Supply Factors",
-        text: "Key supply factors include weather conditions (El Niño/La Niña), biological cycles of oil palms, and labor availability in major producing countries like Malaysia and Indonesia."
+        text: "Palm oil supply is affected by weather (such as El Niño or La Niña), the natural growing cycles of palm trees, and the availability of farm workers in Malaysia and Indonesia."
       },
       {
         section: "Demand Drivers",
@@ -61,25 +61,25 @@ const moduleData: Record<string, ModuleData> = {
     title: "Technical Analysis",
     level: "Advanced",
     duration: "90 mins",
-    description: "Mastering pure price action, volume profiling, algorithmic indicators, and highly advanced charting setups.",
+    description: "Learn how to read charts, understand volume, and use indicators to find good trade entries and exits.",
     content: [
       {
         section: "Price Action Foundation",
-        text: "Understand how to read raw price movement without the clutter of lagging indicators. Focus on support/resistance, trendlines, and candlestick patterns."
+        text: "Learn to read price movement directly from charts. Focus on support and resistance levels, trendlines, and candlestick patterns."
       },
-      { section: "Volume Profile", text: "Volume Profile is an advanced charting study that displays trading activity over a specified time period at specified price levels." },
-      { section: "Algorithmic Indicators", text: "Learn how to use oscillators, moving averages, and volatility bands in a systematic way to identify high-probability entry and exit points." }
+      { section: "Volume Profile", text: "Volume Profile is a chart tool that shows how much trading happened at each price level over a given time." },
+      { section: "Algorithmic Indicators", text: "Learn to use moving averages, oscillators, and volatility bands to find high-probability entry and exit points." }
     ]
   },
   'platform-architecture': {
     title: "Platform Architecture",
     level: "All Levels",
     duration: "30 mins",
-    description: "The complete tactical guide to executing ultra-fast trades and managing active risk natively on TAF software.",
+    description: "A step-by-step guide to using QST software to trade quickly and manage your risk effectively.",
     content: [
-      { section: "Order Types", text: "Master the various order types available: Market, Limit, Stop, and Trailing Stop. Learn when to use each for maximum execution efficiency." },
-      { section: "Risk Management Tools", text: "Configure your trading terminal with real-time risk parameters, auto-liquidation thresholds, and position sizing calculators." },
-      { section: "Execution Speed", text: "Optimize your connection and interface settings to ensure the lowest possible latency when interacting with the exchange." }
+      { section: "Order Types", text: "Learn the different order types: Market, Limit, Stop, and Trailing Stop. Know when to use each one." },
+      { section: "Risk Management Tools", text: "Set up your platform with risk controls, auto-liquidation limits, and position size tools." },
+      { section: "Execution Speed", text: "Adjust your connection and interface settings to reduce delays when sending orders to the exchange." }
     ]
   }
 };

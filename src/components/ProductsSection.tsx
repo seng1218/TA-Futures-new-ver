@@ -12,31 +12,31 @@ if (typeof window !== "undefined") {
 const products = [
   {
     emoji: '🌴', code: 'FCPO', name: 'Crude Palm Oil',
-    desc: "Malaysia's benchmark CPO contract.",
+    desc: "Malaysia's main palm oil futures contract.",
     color: 'bg-green-50 dark:bg-green-950/40 border-green-100 dark:border-green-900 hover:border-green-300 dark:hover:border-green-700',
     accent: 'text-green-700 dark:text-green-400',
   },
   {
     emoji: '📈', code: 'FKLI', name: 'KLCI Futures',
-    desc: 'Trade the Kuala Lumpur Composite Index with high leverage.',
+    desc: 'Trade the Malaysian stock market index with leverage.',
     color: 'bg-blue-50 dark:bg-blue-950/40 border-blue-100 dark:border-blue-900 hover:border-blue-300 dark:hover:border-blue-700',
     accent: 'text-blue-700 dark:text-blue-400',
   },
   {
     emoji: '🥇', code: 'FGLD', name: 'Gold Futures',
-    desc: 'Safe-haven commodity futures on Bursa Malaysia.',
+    desc: 'Gold futures — a popular choice during uncertain times.',
     color: 'bg-yellow-50 dark:bg-yellow-950/30 border-yellow-100 dark:border-yellow-900 hover:border-yellow-300 dark:hover:border-yellow-700/50',
     accent: 'text-yellow-700 dark:text-yellow-400',
   },
   {
     emoji: '🌿', code: 'FEPO', name: 'East Malaysia CPO',
-    desc: 'FEPO — East Malaysia Crude Palm Oil futures contract.',
+    desc: 'Palm oil futures traded in East Malaysia.',
     color: 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-100 dark:border-emerald-900 hover:border-emerald-300 dark:hover:border-emerald-700',
     accent: 'text-emerald-700 dark:text-emerald-400',
   },
   {
     emoji: '🫒', code: 'FSOY', name: 'Soybean Oil',
-    desc: 'Track soybean oil futures for commodity diversification.',
+    desc: 'Soybean oil futures — trade another popular commodity.',
     color: 'bg-orange-50 dark:bg-orange-950/40 border-orange-100 dark:border-orange-900 hover:border-orange-300 dark:hover:border-orange-700',
     accent: 'text-orange-700 dark:text-orange-400',
   },
@@ -57,7 +57,7 @@ export default function ProductsSection() {
             Trade <span className="text-brand">BMD Derivatives</span>
           </h2>
           <p className="text-slate-500 dark:text-slate-400 text-lg mt-4 max-w-2xl mx-auto">
-            Access a comprehensive range of derivatives contracts listed on Bursa Malaysia Derivatives Berhad — all from a single account.
+            Trade a wide range of contracts on Bursa Malaysia — all from one account.
           </p>
         </motion.div>
       </div>

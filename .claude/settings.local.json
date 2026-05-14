@@ -11,7 +11,8 @@
       "Bash(findstr \":443 \\\\|:80 \\\\|:3000 \")",
       "Bash(sc query *)",
       "Bash(npx tsc *)",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(npx next *)"
     ]
   }
 }

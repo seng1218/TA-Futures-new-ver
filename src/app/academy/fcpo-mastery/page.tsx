@@ -26,7 +26,7 @@ export default function FcpoMasteryPage() {
           FCPO: Trading the Global Benchmark
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed transition-colors">
-          Bursa Malaysia&apos;s Crude Palm Oil Futures (FCPO) is the undeniable global benchmark for the pricing of palm oil. To trade it profitably, you must understand the intertwined macroeconomic and agricultural forces driving its volatility.
+          FCPO is the main futures contract for palm oil, traded on Bursa Malaysia. To trade it well, you need to understand what causes its price to move.
         </p>
       </motion.section>
 
@@ -37,7 +37,7 @@ export default function FcpoMasteryPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">1. The Supply Side: Weather & Yield Cycles</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Malaysia and Indonesia collectively account for over 85% of global palm oil production. Because of this massive concentration, any local agricultural disruption instantly shocks the FCPO market.
+            Malaysia and Indonesia together produce over 85% of the world&apos;s palm oil. Any farming disruption in these two countries directly affects FCPO prices.
           </p>
           <ul className="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 mb-8 transition-colors">
             <li><strong>El Niño / La Niña:</strong> Severe weather patterns that bring prolonged droughts or excessive flooding directly damage fresh fruit bunch (FFB) yields, predictably driving FCPO prices higher due to supply scarcity.</li>
@@ -101,7 +101,7 @@ export default function FcpoMasteryPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">2. The Demand Side: Exports & Geopolitics</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            While supply is highly concentrated, demand is massively dispersed. India, China, and the European Union are the largest importers, meaning their domestic policies heavily dictate FCPO movement.
+            While most palm oil comes from just a few countries, it is bought by many countries around the world. Countries like India, China, and the EU are the biggest buyers, so their import rules have a big effect on FCPO prices.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 mt-4">
@@ -145,12 +145,12 @@ export default function FcpoMasteryPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">3. The Substitution Effect: Soybean Oil (CBOT)</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Palm oil does not trade in a vacuum. It aggressively competes with other edible oils, primarily Soybean Oil traded on the Chicago Board of Trade (CBOT:ZL).
+            Palm oil does not move on its own. It competes with other cooking oils — mainly Soybean Oil, which is traded in the US (CBOT:ZL).
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/50 border-l-4 border-brand p-6 rounded-r-xl transition-colors mb-6">
             <h4 className="font-bold text-slate-900 dark:text-white mb-2">Market Correlation</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              Palm oil is traditionally traded at a structural discount to soybean oil. If soybean oil prices spike due to a poor US harvest, global buyers instantly switch their procurement to the cheaper alternative (Palm Oil), driving FCPO up sequentially. Professional traders always keep CBOT Soy Oil open on their secondary platforms to anticipate FCPO momentum.
+              Palm oil usually costs less than soybean oil. When soybean oil prices go up — for example, due to a bad US harvest — buyers switch to the cheaper palm oil instead. This pushes FCPO prices higher. Experienced traders watch soybean oil prices to predict where FCPO is heading next.
             </p>
           </div>
 
@@ -183,10 +183,10 @@ export default function FcpoMasteryPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">4. Biodiesel Mandates</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            A massive portion of raw palm oil is refined into biofuel. Governments in Indonesia (B35 mandate) and Malaysia legally enforce the blending of palm-based biodiesel into traditional fossil fuels.
+            A large amount of palm oil is turned into biofuel. Governments in Indonesia and Malaysia require a set percentage of palm oil to be mixed into regular fuel sold in their countries.
           </p>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 transition-colors">
-            When crude oil (NYMEX:CL) prices are high, producing biodiesel from palm oil becomes extremely economically viable, directly pushing FCPO prices higher. Therefore, maintaining a macro-awareness of global energy prices is vital for advanced FCPO traders.
+            When oil prices are high, making biofuel from palm oil becomes more profitable. This increases demand for palm oil and pushes FCPO prices up. Watching global energy prices is therefore important for FCPO traders.
           </p>
 
           {/* Biodiesel Causal Chain */}
@@ -232,7 +232,7 @@ export default function FcpoMasteryPage() {
 
           <div className="bg-slate-900 text-white rounded-2xl p-8 text-center mt-8">
             <h3 className="text-2xl font-bold mb-3">Track Real-Time Deliveries</h3>
-            <p className="text-slate-400 mb-6 max-w-lg mx-auto">Access MPOB (Malaysian Palm Oil Board) reports and live charting arrays directly inside your Pro Terminal.</p>
+            <p className="text-slate-400 mb-6 max-w-lg mx-auto">View MPOB (Malaysian Palm Oil Board) reports and live charts directly in your Pro Terminal.</p>
             <Link href="/platforms" className="inline-block bg-brand hover:bg-brand-light text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg shadow-brand/20">
               Launch Desktop Terminal
             </Link>

@@ -10,22 +10,22 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: 'Licensed & Regulated',
-    desc: 'Fully regulated by the Securities Commission Malaysia (SC) and a licensed Futures Broker of Bursa Malaysia Derivatives.',
+    desc: 'We are fully licensed by the Securities Commission Malaysia (SC). Trade with peace of mind — we follow all the rules.',
   },
   {
     icon: Building2,
     title: 'Established Since 1995',
-    desc: 'A subsidiary of TA Enterprise Berhad with over 29 years of experience serving retail and professional traders.',
+    desc: 'Part of TA Enterprise since 1995. We have been helping traders for over 29 years.',
   },
   {
     icon: TrendingUp,
     title: 'Direct Bursa BMD Access',
-    desc: 'Direct market access to FCPO, FKLI, Gold Futures, and all BMD-listed derivatives with fast execution.',
+    desc: 'Trade FCPO, FKLI, Gold and more on Bursa Malaysia directly. Fast order placement with no extra steps.',
   },
   {
     icon: Headphones,
     title: 'Professional Dealing Desk',
-    desc: 'Our dedicated dealing desk is available during all trading hours — day and night sessions included.',
+    desc: 'Our team is here to help you during all trading hours, including night sessions.',
   },
 ];
 
@@ -86,7 +86,7 @@ export default function WhyTAF() {
             Your Trusted Partner in <span className="text-brand">Futures Trading</span>
           </h2>
           <p className="text-slate-400 text-lg mt-4 max-w-2xl mx-auto">
-            TA Futures combines decades of institutional experience with modern trading infrastructure to give you the edge.
+            TA Futures has years of experience and modern tools to help you trade with confidence.
           </p>
         </motion.div>
 

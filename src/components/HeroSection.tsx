@@ -94,7 +94,7 @@ export default function HeroSection() {
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
               className="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-xl leading-relaxed"
             >
-              Direct market access to Bursa Malaysia Derivatives (BMD) Futures and Options. Execution speed and precision engineered for the modern retail trader.
+              Trade futures and options on Bursa Malaysia. Fast execution built for everyday traders.
             </motion.p>
 
             <motion.div

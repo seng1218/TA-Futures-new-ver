@@ -6,10 +6,10 @@ import Link from 'next/link';
 import { use3DTilt } from '@/components/use3DTilt';
 
 const modules = [
- { title: "Futures 101", desc: "Understanding critical margin requirements, leverage dynamics, and the foundational mechanics of derivative contracts.", level: "Beginner", slug: "/academy/futures-101" },
- { title: "FCPO Mastery", desc: "Our exclusive deep dive into the supply, demand, and macroeconomic fundamentals driving Crude Palm Oil.", level: "Intermediate", slug: "/academy/fcpo-mastery" },
- { title: "Technical Analysis", desc: "Mastering pure price action, volume profiling, algorithmic indicators, and highly advanced charting setups.", level: "Advanced", slug: "/academy/technical-analysis" },
- { title: "Platform Architecture", desc: "The complete tactical guide to executing ultra-fast trades and managing active risk natively on TAF software.", level: "All Levels", slug: "/academy/platform-architecture" },
+ { title: "Futures 101", desc: "Learn the basics — what futures are, how margin works, and how to place your first trade.", level: "Beginner", slug: "/academy/futures-101" },
+ { title: "FCPO Mastery", desc: "Understand what drives palm oil prices — from weather patterns to global demand.", level: "Intermediate", slug: "/academy/fcpo-mastery" },
+ { title: "Technical Analysis", desc: "Learn how to read charts, spot trends, and use indicators to make smarter trading decisions.", level: "Advanced", slug: "/academy/technical-analysis" },
+ { title: "Platform Architecture", desc: "A hands-on guide to using the TAF platform — how to place orders and manage your open trades.", level: "All Levels", slug: "/academy/platform-architecture" },
 ];
 
 function ModuleCard({ mod, idx }: { mod: typeof modules[0]; idx: number }) {
@@ -65,7 +65,7 @@ export default function AcademyContent() {
  TAF <span className="text-brand">Academy</span>
  </h1>
  <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed transition-colors">
- Elevate your trading acumen. Whether you are cautiously placing your first order or aggressively refining a statistical spread strategy, our curriculum is engineered for your success.
+ Learn to trade at your own pace. Whether you are new to trading or want to improve your skills, our courses are made for you.
  </p>
  </motion.div>
  </section>

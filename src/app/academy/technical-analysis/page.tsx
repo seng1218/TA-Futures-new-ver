@@ -26,7 +26,7 @@ export default function TechnicalAnalysisPage() {
           Systematic Technical Analysis
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed transition-colors">
-          While fundamentals determine the macro-trend over months, technical analysis dictates your entries and exits over hours and minutes. Master price action to pinpoint edge in highly liquid derivative assets.
+          Fundamentals tell you the big picture. Technical analysis helps you decide when to enter and exit a trade. Learn how to read charts and find good trading opportunities.
         </p>
       </motion.section>
 
@@ -37,12 +37,12 @@ export default function TechnicalAnalysisPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">1. The Supremacy of Price Action</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Most retail traders crowd their screens with lagging, complex algorithmic indicators. Professional day traders rely primarily on naked &quot;Price Action&quot;—the raw, unfiltered historical movement of price across candlestick charts.
+            Many traders fill their screens with complicated tools. Experienced traders often focus on &quot;Price Action&quot; — which means watching how prices move on a chart, without extra clutter.
           </p>
           <ul className="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 mb-8 transition-colors">
-            <li><strong>Support & Resistance:</strong> Invisible psychological boundaries where immense institutional order flow sits. Support halts falling markets; Resistance halts rising markets.</li>
+            <li><strong>Support & Resistance:</strong> Price levels where the market tends to stop and reverse. Support stops prices from falling further; Resistance stops prices from rising further.</li>
             <li><strong>Trend Structure:</strong> Identifying Higher Highs and Higher Lows (Uptrend) vs Lower Highs and Lower Lows (Downtrend).</li>
-            <li><strong>Breakouts vs Fakeouts:</strong> A true breakout through heavy resistance must be backed by massive volume. A fakeout is a rapid sweep of liquidity before the price reverts into its previous range.</li>
+            <li><strong>Breakouts vs Fakeouts:</strong> A real breakout past a resistance level needs strong volume to confirm it. A fakeout is when price briefly crosses a level, then quickly falls back down.</li>
           </ul>
 
           {/* Candlestick S/R Chart */}
@@ -101,17 +101,17 @@ export default function TechnicalAnalysisPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">2. Volume & Open Interest (Derivatives Only)</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            In futures trading, you possess a massive advantage over spot markets: absolute data transparency. Every single futures exchange reports two critical metrics that act as lie-detectors for market moves.
+            In futures trading, every exchange publishes two key numbers. These numbers help you check if a price move is real or just a short-term blip.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 mt-4">
             <div className="border border-slate-200 dark:border-slate-700 rounded-xl p-6 bg-slate-50 dark:bg-slate-800/50 transition-colors">
               <h4 className="font-bold text-slate-900 dark:text-white mb-2 transition-colors">Traded Volume</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The total number of contracts matching buyers and sellers during a specific timeframe. A massive price spike without accompanying volume is often a short-term anomaly.</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The total number of contracts traded in a given time. A big price move with low volume is often short-lived.</p>
             </div>
             <div className="border border-slate-200 dark:border-slate-700 rounded-xl p-6 bg-slate-50 dark:bg-slate-800/50 transition-colors">
               <h4 className="font-bold text-slate-900 dark:text-white mb-2 transition-colors">Open Interest (OI)</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The total number of absolute active contracts that remain unsettled. If price is rising and OI is rising rapidly, new institutional money is entering the market, confirming the trend.</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The total number of active contracts still open. If price rises and OI also rises, new money is entering the market — a sign the trend is strong.</p>
             </div>
           </div>
 
@@ -152,12 +152,12 @@ export default function TechnicalAnalysisPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">3. Moving Averages & Momentum</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            While price action is paramount, moving averages (MAs) are widely respected by institutional algorithms, making them self-fulfilling prophecies.
+            Moving averages (MAs) are used by many traders and trading systems. Because so many people watch them, they often act as important price levels.
           </p>
           <div className="bg-slate-50 dark:bg-slate-800/50 border-l-4 border-brand p-6 rounded-r-xl transition-colors mb-6">
             <h4 className="font-bold text-slate-900 dark:text-white mb-2">The Exponential Moving Average (EMA)</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              Unlike Simple Moving Averages, the EMA places heavy mathematical weight on recent price action. Day traders extensively map the 9-EMA and 21-EMA across the 15-minute chart to gauge intraday momentum shifts and establish strict trailing stop-loss thresholds.
+              The EMA reacts faster than a regular moving average because it gives more weight to recent prices. Day traders use the 9-EMA and 21-EMA on a 15-minute chart to spot momentum changes and set their stop-loss levels.
             </p>
           </div>
 
@@ -215,10 +215,10 @@ export default function TechnicalAnalysisPage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">4. The Depth of Market (DOM)</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Technical analysis on a chart shows you the past. The DOM (often referred to as Level 2 order flow) shows you the immediate future. Accessing a live DOM allows you to visually see resting limit orders queued by other traders.
+            Charts show you what has happened. The DOM (also called Level 2) shows you what other traders have queued up right now. You can see buy and sell orders waiting at different price levels.
           </p>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 transition-colors">
-            If an aggressive seller dumps 600 FCPO contracts into the market, peering at the DOM allows you to instantly see if there is enough resting bid liquidity to absorb the shock, or if the price is guaranteed to crash sequentially through thin layers.
+            If someone sells 600 FCPO contracts at once, the DOM lets you see instantly whether there are enough buyers to hold the price, or if it will drop sharply.
           </p>
 
           {/* DOM Order Book Visual */}
@@ -273,8 +273,8 @@ export default function TechnicalAnalysisPage() {
           </div>
 
           <div className="bg-slate-900 text-white rounded-2xl p-8 text-center mt-8">
-            <h3 className="text-2xl font-bold mb-3">Initialize the DOM Layer</h3>
-            <p className="text-slate-400 mb-6 max-w-lg mx-auto">Open the QST Pro Terminal to overlay real-time Level 2 Market Depth directly against your charting workspace.</p>
+            <h3 className="text-2xl font-bold mb-3">Open the DOM</h3>
+            <p className="text-slate-400 mb-6 max-w-lg mx-auto">Open QST Pro Terminal to view live Level 2 order flow alongside your charts.</p>
             <Link href="/platforms" className="inline-block bg-brand hover:bg-brand-light text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg shadow-brand/20">
               Configure Software
             </Link>

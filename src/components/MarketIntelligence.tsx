@@ -45,7 +45,7 @@ export default async function MarketIntelligence() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
         <div>
           <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight">Market Intelligence</h2>
-          <p className="text-slate-600 dark:text-slate-400 text-lg">Live, actionable insights streaming directly to your terminal.</p>
+          <p className="text-slate-600 dark:text-slate-400 text-lg">Get the latest market news delivered to you in real time.</p>
         </div>
       </div>
 

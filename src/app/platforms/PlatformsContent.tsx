@@ -38,7 +38,7 @@ export default function PlatformsContent() {
  Advanced <span className="text-brand">Platforms</span>
  </h1>
  <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto transition-colors">
- Institutional-grade execution environments tailored to your workflow. From professional desktop terminals to lightning-fast mobile routing, trade without limits.
+ Trade the way you want. Whether on desktop, browser, or mobile — our platforms are fast and easy to use for all traders.
  </p>
  </motion.div>
  </section>
@@ -54,7 +54,7 @@ export default function PlatformsContent() {
  <span className="text-xs font-bold text-brand uppercase tracking-widest mb-4 block" style={{ transform: 'translateZ(16px)' }}>Flagship Terminal</span>
  <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-4 group-hover:text-brand transition-colors" style={{ transform: 'translateZ(20px)' }}>QST Desktop</h2>
  <p className="text-slate-600 dark:text-slate-400 mb-10 leading-relaxed text-lg transition-colors">
- Engineered exclusively for the professional day trader. Gain the ultimate edge with deep market DOM, advanced technical indicators, native spread matrices, and multi-monitor workspace support out of the box.
+ Built for active traders. See live market depth, use advanced charts, view spread data, and work across multiple screens — all in one place.
  </p>
  <a
  href="https://bmy-repo.qst.global/prod/BMY_windows-x64_prod.exe"
@@ -86,7 +86,7 @@ export default function PlatformsContent() {
  <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 block" style={{ transform: 'translateZ(14px)' }}>Browser Access</span>
  <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white mb-4 group-hover:text-brand transition-colors" style={{ transform: 'translateZ(18px)' }}>QST Web Lite</h2>
  <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed transition-colors">
- Fast, lightweight browser-based trading. Execute positions from any terminal instantly—perfectly synced with your desktop environment, without requiring any software installation.
+ Trade from any web browser — no downloads needed. It works on any computer and stays in sync with your desktop app.
  </p>
  <div className="aspect-[16/9] bg-slate-50/5 border border-slate-200/20 dark:border-slate-700/20 rounded-xl mb-8 flex items-center justify-center overflow-hidden relative shadow-lg">
  <Image src="/qst-web-lite.png" alt="QST Web Lite Rendering" width={800} height={600} className="w-full h-full object-cover object-left-top group-hover:scale-105 transition-transform duration-700 ease-out" unoptimized />
@@ -111,7 +111,7 @@ export default function PlatformsContent() {
  <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 block" style={{ transform: 'translateZ(14px)' }}>On The Go</span>
  <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white mb-4 group-hover:text-brand transition-colors" style={{ transform: 'translateZ(18px)' }}>TAF Mobile</h2>
  <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed transition-colors">
- Trade FCPO and global futures seamlessly on iOS and Android. Maintain absolute control with real-time charting, immediate order routing, and instant push alerts.
+ Trade from your phone on iOS or Android. Get live charts, place orders quickly, and receive instant notifications.
  </p>
  <div className="bg-slate-50/5 border border-slate-200/20 dark:border-slate-700/20 rounded-xl p-8 mb-8 transition-colors">
  <h4 className="text-center text-sm font-bold text-slate-800 dark:text-slate-200 mb-6 uppercase tracking-wider">Scan to Download</h4>

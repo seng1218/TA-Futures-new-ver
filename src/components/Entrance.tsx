@@ -28,7 +28,7 @@ export default function Entrance({ onComplete }: { onComplete: () => void }) {
   return (
     <motion.div
       initial={{ opacity: 1 }}
-      exit={{ opacity: 0, y: -20, transition: { duration: 0.8, ease: "easeInOut" } }}
+      exit={{ opacity: 0, scale: 1.05, filter: 'blur(10px)', transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }}
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white dark:bg-slate-950"
     >
       <div className="relative overflow-hidden">

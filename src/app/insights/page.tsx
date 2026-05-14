@@ -16,7 +16,7 @@ export default function InsightsPage() {
             Market <span className="text-brand">Insights</span>
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            Gain a sophisticated edge. Access our proprietary news updates in real-time.
+            Stay on top of the markets. Get the latest news updated in real time.
           </p>
         </div>
       </section>

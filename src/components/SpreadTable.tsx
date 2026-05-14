@@ -16,7 +16,7 @@ export default function SpreadTable() {
  <div className="w-full mt-16 pb-20">
  <div className="mb-6">
  <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">CPO Intracommodity Spread Charge</h2>
- <p className="text-slate-600 dark:text-slate-400 mt-1">Matrix for calculating margin spread charges across different contract months.</p>
+ <p className="text-slate-600 dark:text-slate-400 mt-1">This table shows the spread charge (in MYR) between different CPO contract months.</p>
  </div>
 
  <p className="text-xs text-slate-400 dark:text-slate-500 mb-3 md:hidden flex items-center gap-1">

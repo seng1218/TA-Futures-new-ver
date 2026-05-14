@@ -43,7 +43,7 @@ const faqs = [
     question: "What is the performance margin practice in TAF?",
     answer: (
       <div className="space-y-4">
-        <p>In TAF, we practise full-margin trading for all Bursa derivative products. The margin rates are in accordance with Bursa margin requirements.</p>
+        <p>At TAF, you need to have the full margin amount in your account to open a trade. Our margin rates follow Bursa Malaysia&apos;s requirements.</p>
         <div className="bg-brand/5 p-4 rounded-xl border border-brand/10">
           <p className="font-medium text-slate-900 dark:text-white mb-3">Currently, the required margin is as follows (it is subject to change):</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -69,7 +69,7 @@ const faqs = [
     )
   },
   { question: "What if I want to trade intraday with a lower required margin?", answer: "A lower intraday margin is subject to management approval on a case-by-case basis." },
-  { question: "How many days am I eligible to hold position when my margin account is below the requirement?", answer: "Clients can hold T+3 if and only if the client's margin account is above 50% of the required margin. Any margin accounts lower than 50% will be subject to TAF foreclosure prior to the T+3 margin call." },
+  { question: "How many days am I eligible to hold position when my margin account is below the requirement?", answer: "You can keep your position open for up to 3 days (T+3) as long as your account has at least 50% of the required margin. If it drops below 50%, TAF may close your position before the 3-day deadline." },
   {
     question: "How is the margin call calculated?",
     answer: (
@@ -86,8 +86,8 @@ const faqs = [
       </div>
     )
   },
-  { question: "What if I did not close or deposit the margin call?", answer: "When a client does not act upon the margin call, TAF will exercise its rights to foreclose the client's position even if the margin call has yet to reach T+3. The decision is in the hands of TAF to determine the right course of action." },
-  { question: "What is after-hour night trading (T+1)?", answer: "After-hour night trading is an extended trading hour a day before the next trading session. The aim is to sustain growth momentum by enhancing infrastructure to improve the price discovery of Malaysian derivatives products and attract international market players." },
+  { question: "What if I did not close or deposit the margin call?", answer: "If you do not add funds or close your position after a margin call, TAF has the right to close it for you — even before the T+3 deadline." },
+  { question: "What is after-hour night trading (T+1)?", answer: "Night trading lets you trade after normal hours. It runs on the evening before the next trading day, giving more people — including international traders — the chance to participate." },
   { question: "What is the trading time for the extended hour trading?", answer: "The trading hours are from Monday to Thursday, 9:00 PM to 11:00 PM Malaysia Time for commodity products and until 2:30 AM for all equity and selected commodity products. The night trading will cease if the next trading day is a public holiday." },
   { question: "What are the FCPO night trading hours?", answer: "FCPO night trading hours are from 9:00 PM to 11:00 PM, Monday to Thursday (except public holidays)." },
   { question: "If I deposit funds to TAF during night trading, will TAF entertain the deposit?", answer: "Yes, TAF back office will update the client's deposit at the cut-off time of 11:00 PM. Any deposits made after the cut-off time will be updated on the next trading session." },
@@ -140,7 +140,7 @@ const faqs = [
       </div>
     )
   },
-  { question: "How long does it take to receive the complaint result?", answer: "The duration of the process may differ on a case-by-case basis. It is to ensure the process is fair to all parties without prejudice." },
+  { question: "How long does it take to receive the complaint result?", answer: "The time taken depends on each case. This is to make sure the process is fair for everyone involved." },
   {
     question: "What else can I do if I am not happy with the TAF internal complaint result?",
     answer: (

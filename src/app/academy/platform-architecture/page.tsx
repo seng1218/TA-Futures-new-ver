@@ -27,7 +27,7 @@ export default function PlatformArchitecturePage() {
           Architecting QST Desktop
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed transition-colors">
-          Quick Screen Trading (QST) is our institutional-grade execution layer. It is built strictly for high-frequency order routing, extreme customizability, and absolute stability. Master the architecture below to secure your execution edge.
+          Quick Screen Trading (QST) is our professional trading platform. It is designed for fast order execution, full customisation, and reliable performance. Learn how to set it up below.
         </p>
       </motion.section>
 
@@ -52,7 +52,7 @@ export default function PlatformArchitecturePage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">1. Frame Management & Workspaces</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            QST abandons standard cascading browser windows in favor of a hardcore &quot;Frame &amp; Workspace&quot; architecture. This allows day traders to stretch perfectly synchronized layouts across 2, 4, or even 8 monitors simultaneously without software lag.
+            QST uses a &quot;Frame &amp; Workspace&quot; layout instead of regular windows. You can spread your setup across 2, 4, or even 8 monitors at the same time, with no lag.
           </p>
 
           <div className="my-10 border-8 border-slate-100 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg dark:shadow-none transition-colors">
@@ -69,7 +69,7 @@ export default function PlatformArchitecturePage() {
           <ul className="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 mb-8 transition-colors">
             <li><strong>The Core Workspace:</strong> Your primary grid. You can save infinite Workspace Profiles (e.g. &quot;Morning FCPO Scope&quot;, &quot;Afternoon US Equities&quot;) and swap between them instantly.</li>
             <li><strong>Frame Docking:</strong> Every individual widget (DOM, Chart, Quote Board) is an isolated Frame. You can securely snap, stack, or tab these frames anywhere inside your workspace.</li>
-            <li><strong>Link Groups (Color Coding):</strong> A mandatory workflow optimization. By assigning a red color link to your &quot;Quotes Monitor&quot; and your &quot;Order Ticket&quot;, clicking any asset instantly auto-fills the ticket, preventing gross execution errors.</li>
+            <li><strong>Link Groups (Color Coding):</strong> A useful efficiency feature. When you link your &quot;Quotes Monitor&quot; and &quot;Order Ticket&quot; with the same colour, clicking any asset automatically fills in the order form — reducing the chance of errors.</li>
           </ul>
 
           {/* Link Group Color Coding Visual */}
@@ -101,23 +101,23 @@ export default function PlatformArchitecturePage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">2. The Price Ladder (Depth of Market)</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            The standard Order Entry ticket is too slow for scalping. Professional traders live inside the &quot;Price Ladder&quot; (DOM) frame.
+            The regular order form can be too slow for fast trades. Most active traders use the &quot;Price Ladder&quot; (DOM) instead.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 mt-4">
             <div className="border border-slate-200 dark:border-slate-700 rounded-xl p-6 bg-slate-50 dark:bg-slate-800/50 border-t-4 border-t-red-500 transition-colors">
               <h4 className="font-bold text-slate-900 dark:text-white mb-2 transition-colors">The Ask Column (Sellers)</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The red column on the right displays all resting limit sell orders. Clicking inside this column establishes a pending limit order to immediately short the market.</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The red column shows all pending sell orders. Click inside it to place a sell order at that price.</p>
             </div>
             <div className="border border-slate-200 dark:border-slate-700 rounded-xl p-6 bg-slate-50 dark:bg-slate-800/50 border-t-4 border-t-blue-500 transition-colors">
               <h4 className="font-bold text-slate-900 dark:text-white mb-2 transition-colors">The Bid Column (Buyers)</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The blue column on the left displays all resting limit buy orders. Visually reading the thickness of these two columns dictates immediate short-term momentum.</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 transition-colors">The blue column shows all pending buy orders. Comparing the two columns gives you a quick sense of short-term price direction.</p>
             </div>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800/50 border-l-4 border-brand p-6 rounded-r-xl transition-colors">
             <h4 className="font-bold text-slate-900 dark:text-white mb-2">Single-Click Execution</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              To drastically reduce drag, enabling single-click order routing inside the Price Ladder bypasses all confirmation dialogs. Your order goes direct-to-exchange natively.
+              Turn on single-click ordering inside the Price Ladder to skip the confirmation pop-up. Your order is sent directly to the exchange.
             </p>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function PlatformArchitecturePage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">3. The Quotes Monitor</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Your centralized nervous system. The Quotes Monitor tracks your entire portfolio of monitored assets across one dense spreadsheet.
+            The Quotes Monitor shows all your watched assets in one place, like a live dashboard.
           </p>
 
           <div className="my-10 border-8 border-slate-100 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg dark:shadow-none transition-colors">
@@ -141,9 +141,9 @@ export default function PlatformArchitecturePage() {
           </div>
 
           <ul className="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 mb-6 transition-colors">
-            <li><strong>Dynamic Sorting:</strong> Instantly sort by % Net Change to detect macroeconomic breakouts across different asset classes.</li>
-            <li><strong>Spread Matrices:</strong> QST excels at natively displaying Intercommodity & Intracommodity spread pricing without requiring manual calculation overlays.</li>
-            <li><strong>Custom Columns:</strong> Track highly specific institutional metrics like Daily Volume, Open Interest (OI) velocity, and Implied Volatility right on the front page.</li>
+            <li><strong>Dynamic Sorting:</strong> Sort by % change to quickly spot which markets are moving.</li>
+            <li><strong>Spread Matrices:</strong> QST shows spread pricing between contracts automatically, without manual calculations.</li>
+            <li><strong>Custom Columns:</strong> Add columns for Daily Volume, Open Interest, and other key data directly on your main screen.</li>
           </ul>
         </div>
 
@@ -151,10 +151,10 @@ export default function PlatformArchitecturePage() {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 md:p-12 shadow-sm dark:shadow-none transition-colors">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-100 dark:border-slate-800 pb-4 transition-colors">4. Position Tracking & Account Risk</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
-            Unmonitored risk destroys capital. In QST, the <strong>Positions Window</strong> is absolutely mandatory, calculating your Mark-to-Market Realized and Unrealized Profit/Loss per tick linearly.
+            Not tracking your risk can wipe out your account. The <strong>Positions Window</strong> in QST shows your live profit and loss in real time, updating with every price tick.
           </p>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 transition-colors">
-            Additionally, the <strong>Working Orders</strong> tab is separated distinctly from the <strong>Filled Orders</strong> window. <em>Never leave your desk without explicitly validating the Working Orders frame to ensure no unattended limit or stop orders remain active in a volatile market.</em>
+            The <strong>Working Orders</strong> tab shows orders still waiting to be filled. The <strong>Filled Orders</strong> window shows completed trades. <em>Always check Working Orders before you leave — do not leave open orders unattended in a moving market.</em>
           </p>
 
           {/* Positions Window Mockup */}
@@ -204,7 +204,7 @@ export default function PlatformArchitecturePage() {
 
           <div className="bg-slate-900 text-white rounded-2xl p-8 text-center mt-8">
             <h3 className="text-2xl font-bold mb-3">Install Your Trading System</h3>
-            <p className="text-slate-400 mb-6 max-w-lg mx-auto">Mastered the theory? Click below to install the QST Desktop Terminal directly onto your machine.</p>
+            <p className="text-slate-400 mb-6 max-w-lg mx-auto">Ready to trade? Download and install QST Desktop on your computer.</p>
             <Link href="/platforms" className="inline-block bg-brand hover:bg-brand-light text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg shadow-brand/20">
               Launch Download Portal
             </Link>

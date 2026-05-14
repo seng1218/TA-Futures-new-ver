@@ -33,7 +33,7 @@ export default function LeadForm() {
 
  <h3 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight">Application Received!</h3>
  <p className="text-slate-600 dark:text-slate-400 mb-8 max-sm mx-auto leading-relaxed">
- Your request has been securely routed to our dealing desk. Here is what happens next:
+ Your request has been sent to our team. Here is what will happen next:
  </p>
 
  <div className="w-full text-left space-y-4 mb-8 bg-gray-50 dark:bg-slate-950 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
@@ -43,7 +43,7 @@ export default function LeadForm() {
  </div>
  <div className="flex items-start">
  <span className="text-brand mr-3 mt-0.5"><FileText size={18} /></span>
- <p className="text-sm text-slate-700 dark:text-slate-300">Prepare your NRIC/Passport for KYC verification and 3 months latest bank statement for account opening procedure.</p>
+ <p className="text-sm text-slate-700 dark:text-slate-300">Get your NRIC or Passport ready. You will also need your last 3 months of bank statements.</p>
  </div>
  </div>
 

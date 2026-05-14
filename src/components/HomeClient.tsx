@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Entrance from "@/components/Entrance";
 import { sceneState } from "@/utils/store";
 import { useRef, useState, useCallback, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -94,8 +95,10 @@ export default function HomeClient({ children }: { children: React.ReactNode }) 
 
   return (
     <div ref={container} className="relative min-h-screen">
-      {!isLoaded && <Entrance onComplete={handleEntranceComplete} />}
-      <div className={`transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      <AnimatePresence>
+        {!isLoaded && <Entrance key="entrance" onComplete={handleEntranceComplete} />}
+      </AnimatePresence>
+      <div className={isLoaded ? 'opacity-100' : 'opacity-0'}>
         {children}
       </div>
     </div>

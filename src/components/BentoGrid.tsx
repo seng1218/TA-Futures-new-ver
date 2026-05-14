@@ -47,7 +47,7 @@ export default function BentoGrid() {
     >
       <motion.div variants={cardVariants} custom={0} className="mb-10">
         <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight">Trader Utilities</h2>
-        <p className="text-slate-600 dark:text-slate-400 text-lg">Calculate risk and execute trades with zero friction.</p>
+        <p className="text-slate-600 dark:text-slate-400 text-lg">Plan your trades and know exactly how much money you need.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6" style={{ transformStyle: 'preserve-3d' }}>
@@ -99,7 +99,7 @@ export default function BentoGrid() {
 
             <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
               <div>
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-2">Total Margin Required</p>
+                <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-2">Total Money Needed</p>
                 <motion.p
                   key={totalMargin}
                   initial={{ scale: 0.9, opacity: 0.6 }}
@@ -112,7 +112,7 @@ export default function BentoGrid() {
                 </motion.p>
               </div>
               <Link href="/markets" className="text-sm text-brand hover:text-brand-light font-bold underline underline-offset-4 transition-colors">
-                View Full Specs
+                See Full Details
               </Link>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function BentoGrid() {
             style={{ transformStyle: 'preserve-3d', willChange: 'transform' }}
           >
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-tight" style={{ transform: 'translateZ(18px)' }}>TAF Mobile</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">Trade FCPO and all BMD futures on the go. Scan to instantly download the TAF Mobile app.</p>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">Trade anytime, anywhere on your phone. Scan to download the TAF Mobile app.</p>
 
             <div className="flex gap-4 justify-between w-full">
               {[
