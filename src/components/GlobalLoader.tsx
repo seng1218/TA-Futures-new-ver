@@ -7,11 +7,12 @@ import Entrance from './Entrance';
 
 export default function GlobalLoader({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [isLoaded, setIsLoaded] = useState(true); // Default to true so other pages don't wait
+  const [isLoaded, setIsLoaded] = useState(true);
 
   useEffect(() => {
-    // Only play entrance on the root home page
-    if (pathname === '/') {
+    // Only play entrance on the root home page if not seen before
+    const hasSeenEntrance = sessionStorage.getItem('hasSeenEntrance') === 'true';
+    if (pathname === '/' && !hasSeenEntrance) {
       setIsLoaded(false);
     } else {
       setIsLoaded(true);
@@ -20,6 +21,7 @@ export default function GlobalLoader({ children }: { children: React.ReactNode }
 
   const handleComplete = useCallback(() => {
     setIsLoaded(true);
+    sessionStorage.setItem('hasSeenEntrance', 'true');
   }, []);
 
   return (

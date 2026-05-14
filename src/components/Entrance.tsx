@@ -12,12 +12,12 @@ export default function Entrance({ onComplete }: { onComplete: () => void }) {
       setCounter((prev) => {
         if (prev >= 100) {
           clearInterval(timer);
-          completionTimeout = setTimeout(onComplete, 500);
+          completionTimeout = setTimeout(onComplete, 200);
           return 100;
         }
-        return prev + 1;
+        return prev + 2;
       });
-    }, 20);
+    }, 15);
 
     return () => {
       clearInterval(timer);
