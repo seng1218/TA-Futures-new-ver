@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Entrance from "@/components/Entrance";
 import { sceneState } from "@/utils/store";
-import { useRef, useState, useCallback, useEffect } from "react";
+import { useRef, useState, useCallback } from "react";
 import { AnimatePresence } from "framer-motion";
 
 if (typeof window !== "undefined") {
@@ -22,7 +22,6 @@ export default function HomeClient({ children }: { children: React.ReactNode }) 
 
   useGSAP(() => {
     if (!isLoaded) return;
-    // ... rest of useGSAP logic
 
     // Entrance Animation for Hero
     const tl = gsap.timeline();
@@ -88,7 +87,9 @@ export default function HomeClient({ children }: { children: React.ReactNode }) 
   return (
     <div ref={container} className="relative min-h-screen">
       <AnimatePresence>
-        {!isLoaded && <Entrance key="entrance" onComplete={handleEntranceComplete} />}
+        {!isLoaded && (
+          <Entrance key="entrance-loader" onComplete={handleEntranceComplete} />
+        )}
       </AnimatePresence>
       <div className={isLoaded ? 'opacity-100' : 'opacity-0'}>
         {children}
