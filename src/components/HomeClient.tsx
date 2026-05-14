@@ -16,16 +16,8 @@ export default function HomeClient({ children }: { children: React.ReactNode }) 
   const [isLoaded, setIsLoaded] = useState(false);
   const container = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (sessionStorage.getItem('hasSeenEntrance') === 'true') {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setIsLoaded(true);
-    }
-  }, []);
-
   const handleEntranceComplete = useCallback(() => {
     setIsLoaded(true);
-    sessionStorage.setItem('hasSeenEntrance', 'true');
   }, []);
 
   useGSAP(() => {
