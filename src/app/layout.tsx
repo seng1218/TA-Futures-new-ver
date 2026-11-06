@@ -34,6 +34,13 @@ export default function RootLayout({
  return (
  <html lang="en" suppressHydrationWarning>
  <head>
+ <Script id="gtm-base" strategy="afterInteractive">
+ {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNJMWT2C');`}
+ </Script>
  <Script id="meta-pixel" strategy="afterInteractive">
  {`!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -48,6 +55,9 @@ fbq('track', 'PageView');`}
  </Script>
  </head>
  <body className="antialiased selection:bg-brand selection:text-white flex flex-col min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+ <noscript>
+ <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNJMWT2C" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
+ </noscript>
  <noscript>
  {/* eslint-disable-next-line @next/next/no-img-element */}
  <img height="1" width="1" style={{ display: "none" }} alt="" src="https://www.facebook.com/tr?id=29055090117444003&ev=PageView&noscript=1" />

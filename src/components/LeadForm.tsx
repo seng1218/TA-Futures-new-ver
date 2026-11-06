@@ -14,6 +14,13 @@ export default function LeadForm() {
  const result = await submitLead(formData);
 
  if (result.success) {
+ const w = window as unknown as { dataLayer?: Record<string, unknown>[] };
+ w.dataLayer = w.dataLayer || [];
+ w.dataLayer.push({
+ event: 'generate_lead',
+ form_name: 'open_account',
+ interest: String(formData.get('interest') ?? '').toUpperCase(),
+ });
  setStatus('success');
  } else {
  setStatus('idle');
